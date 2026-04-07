@@ -1,7 +1,89 @@
 @import "tailwindcss";
 
 *{
-    padding: 0 5%;
+    padding: 0 2%;
     
 }
 
+
+/* navbar */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo{
+    width: 10%;
+    padding: 0;
+}
+
+.sub-nav{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;  
+    align-items: center;
+    padding: 0 80px;
+    
+}
+
+.sub-nav a{
+    margin: 10px;
+}
+
+a:hover{
+    color: rgb(18, 171, 120);
+}
+
+
+
+
+/* home page - hero section */
+
+.hero-sec{
+    display: flex;
+    justify-content: start;
+    margin: 10% 0;
+}
+
+.profil{
+    width: 15%;
+    height: 20%;
+    border-radius: 50%;
+}
+
+.profil-text h1{
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.profil-text a{
+    font-size: 10px;
+    background-color: rgb(19, 143, 102);
+    border-radius: 10px;
+    padding: 8px;
+    margin: 20px;
+    color: azure;
+}
+
+.profil-text p{
+    margin-bottom: 20px;
+}
+
+
+
+/* tools section */
+
+.tools{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.tool-img{
+    display: grid;
+    grid-template-rows: auto
+}
