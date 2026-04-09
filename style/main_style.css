@@ -1,0 +1,310 @@
+@import "tailwindcss";
+
+*{
+    padding: 0 0;
+    
+}
+
+h1{
+    font-size: 25px;
+    font-weight: bolder;
+    text-align: center;
+    padding: 5px 0;
+}
+
+
+/* navbar */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2%;
+}
+
+
+.logo{
+    width: 10%;
+    padding: 0;
+}
+
+.sub-nav{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;  
+    align-items: center;
+   
+}
+
+.sub-nav a{
+    margin: 10px;
+}
+
+a:hover{
+    color: rgb(18, 171, 120);
+}
+
+
+
+
+/* home page - hero section */
+
+.hero-sec{
+    display: flex;
+    justify-content: start;
+    margin: 10% 0;
+    padding: 0 10%;
+}
+
+.profil{
+    width: 15%;
+    height: 20%;
+    border-radius: 50%;
+}
+
+.profil-text h1{
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: left;
+    padding-left: 8%;
+}
+
+.profil-text a{
+    display: inline-block;
+    font-size: 12px;
+    background-color: rgb(19, 143, 102);
+    border-radius: 10px;
+    padding: 8px;
+    margin: 20px 8%;
+    color: azure;
+    transition: 0.3s;
+}
+
+.profil-text p{
+    margin-bottom: 10px;
+    padding-left: 8%;
+}
+
+.profil-text a:hover{
+    transform: scale(1.1);
+}
+
+
+/* tools section */
+
+.tools{
+    padding: 0 12%;
+}
+
+.tools-sec{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6%;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.tool-img{
+    /* background-color: rgb(170, 28, 28); */
+    border-radius: 5px;
+    width: 55px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.tool-img img{
+    width: 80%;
+    height: auto;
+    
+}
+
+.tool-img:hover{
+    transform: scale(1.3);
+}
+
+
+
+/* porto and blog section  */
+
+.porto, .blog{
+    margin: 0;
+    margin-top: 10%;
+}
+
+.porto-card, .blog-card{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    gap: 20px
+}
+
+.subporto, .blog-sec{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(182, 222, 209, 0.192);
+    padding: 20px;
+    margin: 20px;
+    width: 500px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.subporto:hover, .blog-sec:hover{
+    background-color: rgba(37, 119, 92, 0.305);
+    transform: scale(1.05);
+}
+
+.subporto img, .blog-sec img{
+    border-radius: 10px;   
+}
+
+.subporto h1, .blog-sec h1{
+    text-align: left;
+    padding: 20px 0px 10px;
+}
+.subporto p, .blog-sec p{
+    text-align: justify;
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+.subporto a, .blog-sec a{
+    font-size: 12px;
+    color: rgb(107, 125, 113);
+    width: fit-content;
+    margin: 0  0 0px auto;
+    margin-right: 10px;
+    border-radius: 10px;
+    padding: 2px 10px;    
+}
+
+.subporto a:hover, .blog-sec a:hover{
+    background-color: rgb(29, 123, 92);
+    color: aliceblue;
+}
+
+.more-porto, .more-blog{
+    display: block;
+    width: fit-content;
+    margin: 40px auto;
+    border-radius: 30px;
+    padding: 6px 12px;
+    border: solid 1px green;
+}
+
+.more-porto:hover, .more-blog:hover{
+    background-color: rgb(29, 123, 92) ;
+    color: aliceblue;
+}
+
+
+
+/* footer */
+
+footer{
+    background-color: rgb(22, 131, 95);
+    display: flex;
+    justify-content: space-around;
+    color: azure;
+    padding: 5%;
+    margin-top: 15%;
+    gap: 2%;
+
+}
+
+.text-footer h1{
+    text-align: left;
+    font-size: 30px;
+    margin: 10px;
+}
+
+.text-footer p{
+    margin: 10px;
+    
+}
+
+.footer-icon{
+    display: flex;
+    justify-content: flex-start;
+    width: 200px;
+    height: 80px;
+    margin: 10px;
+    margin-top: 30px;
+    gap: 13px;
+}
+
+.footer-icon img{
+    width: 100%;
+    height: 40%;
+    border-radius: 10px;
+    /* transition: 0.2s; */
+}
+
+.footer-icon img:hover{
+    /* transform:rotateX('right'); */
+}
+
+
+
+
+
+h2{
+    font-size: 18px;
+    flex-direction: row;
+    font-weight: bold;
+    margin-top: 30%;
+    padding-bottom: 10px;
+    white-space: nowrap;
+}
+
+.footer-links{
+    margin: 0 10px;
+    
+}
+.sub-links{
+    font-size: 14px;
+}
+
+
+
+.email{
+    padding: 0  10px 50px;
+    margin: 0 30px;
+    
+}
+
+.email h2{
+    margin-top: 12%;
+    padding-bottom: 5px;
+}
+
+
+
+form{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.in-email{
+    padding: 2% 3%;
+    border-radius: 5px;
+    border: solid 2px azure;
+    font-size: 14px;
+}
+
+.sub-email{
+    background-color: azure;
+    font-size: 14px;
+    color: gray;
+    padding: 5px 8px;
+    margin: 20px 0;
+    border-radius: 8px;
+    white-space: nowrap;
+}
